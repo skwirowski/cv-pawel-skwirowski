@@ -1,0 +1,16 @@
+@main-width: 70%;
+@aside-width: 100% - @main-width;
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  &_main {
+    width: @main-width;
+  }
+
+  &_aside {
+    width: @aside-width;
+  }
+}
