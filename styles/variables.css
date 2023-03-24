@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Titillium+Web:wght@300;400;700&display=swap');
+
+:root {
+  --font-family: "Titillium Web", sans-serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --font-family-header: "Bebas Neue", cursive;
+
+  --default-text-color: #000;
+  --color-1: gray;
+  --color-2: #bebcbc;
+}

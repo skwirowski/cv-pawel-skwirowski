@@ -1,0 +1,38 @@
+body {
+  width: 80%;
+  font-family: var(--font-family);
+  font-weight: var(--weight-regular);
+  font-size: 12px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.container__left {
+  width: 70%;
+  margin-right: 5px;
+}
+
+.container__right {
+  width: 30%;
+  margin-left: 5px;
+}
+
+.strong {
+  font-weight: var(--weight-bold);
+}
+
+.main-content {
+  margin-bottom: 15px;
+}
+
+@media print {
+  body {
+    width: 90%;
+    margin: auto;
+  }
+}

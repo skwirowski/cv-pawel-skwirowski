@@ -1,0 +1,6 @@
+@import "./variables.css";
+@import "./common.css";
+@import "./header/header.css";
+@import "./experience/experience.css";
+@import "./personal-info/personal-info.css";
+@import "./skills/skills.css";

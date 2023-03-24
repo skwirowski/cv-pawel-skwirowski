@@ -1,0 +1,66 @@
+.experience {
+  margin-bottom: 10px;
+}
+
+.experience__time {
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: var(--color-2);
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.experience__company {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.experience__company__image__wrapper {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--color-1);
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.experience__company__image {
+  height: 100%;
+  width: 100%;
+}
+
+.experience__company__name {
+  font-size: 18px;
+  font-weight: var(--weight-bold);
+}
+
+.experience__postion-location {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.experience__postion-location__position {}
+
+.experience__postion-location__location {}
+
+.experience__project, .experience__role, .experience__tech-stack {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.experience__project__description,
+.experience__role__description,
+.experience__tech-stack__description {
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.experience__project__content,
+.experience__role__content,
+.experience__tech-stack__content {
+  font-weight: var(--weight-light);
+  text-align: justify;
+}
