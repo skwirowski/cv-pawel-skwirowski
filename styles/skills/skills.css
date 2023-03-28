@@ -34,6 +34,12 @@
   margin-bottom: 0;
 }
 
+
+.skills__additional__item:nth-last-child(1),
+.skills__additional__item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
 .skills__core__item__image__wrapper,
 .skills__additional__item__image__wrapper {
   height: 30px;
@@ -44,7 +50,7 @@
 }
 
 .skills__core__item__image,
-.skills__core__item__image {
+.skills__additional__item__image {
   height: 100%;
   width: 100%;
 }

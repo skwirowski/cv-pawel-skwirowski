@@ -15,12 +15,12 @@
   ];
 
   const additionalSkillsList = [
-    { imageSrc: "", name: "Node.js" },
-    { imageSrc: "", name: "Clouds" },
-    { imageSrc: "", name: "NoSQL DB" },
-    { imageSrc: "", name: "SQL DB" },
-    { imageSrc: "", name: "C# .NET" },
-    { imageSrc: "", name: "Python" },
+    { imageSrc: "styles/images/nodejs.svg", name: "Node.js" },
+    { imageSrc: "styles/images/clouds.svg", name: "Clouds" },
+    { imageSrc: "styles/images/nosqldatabase.svg", name: "NoSQL DB" },
+    { imageSrc: "styles/images/sqldatabase.svg", name: "SQL DB" },
+    { imageSrc: "styles/images/dotnet.svg", name: "C# .NET" },
+    { imageSrc: "styles/images/python.svg", name: "Python" },
   ];
 
   const skillsBlocks = (coreSkills, additionalSkills) => /* html */ `
@@ -39,7 +39,7 @@
                 <div class="skills__core__item">
                   <div class="skills__core__item__image__wrapper">${
                     core.imageSrc
-                      ? ` <img class="skills__core__item__image" src=${core.imageSrc} alt=${core.name} />`
+                      ? `<img class="skills__core__item__image" src=${core.imageSrc} alt=${core.name} />`
                       : ""
                   }
                   </div>
@@ -57,10 +57,15 @@
             .map(
               (additional) => /* html */ `
               <div class="skills__additional__item">
-                <div class="skills__additional__item__image__wrapper">
-                  <!-- <img class="skills__additional__item__image" src=${additional.imageSrc} alt=${additional.name} /> -->
+                <div class="skills__additional__item__image__wrapper">${
+                  additional.imageSrc
+                    ? `<img class="skills__additional__item__image" src=${additional.imageSrc} alt=${additional.name} />`
+                    : ""
+                }
                 </div>
-                <div class="skills__additional__item__content">${additional.name}</div>
+                <div class="skills__additional__item__content">${
+                  additional.name ? additional.name : ""
+                }</div>
               </div>
             `
             )
