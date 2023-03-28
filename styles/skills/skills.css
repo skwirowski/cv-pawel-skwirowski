@@ -26,15 +26,19 @@
   width: 50%;
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.skills__core__item:nth-last-child(1),
+.skills__core__item:nth-last-child(2) {
+  margin-bottom: 0;
 }
 
 .skills__core__item__image__wrapper,
 .skills__additional__item__image__wrapper {
   height: 30px;
   width: 30px;
-  border-radius: 50%;
-  background-color: var(--color-1);
+  background-color: #fff;
   overflow: hidden;
   margin-right: 10px;
 }

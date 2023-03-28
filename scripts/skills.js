@@ -1,17 +1,17 @@
 (function () {
   const coreSkillsList = [
-    { imageSrc: "", name: "HTML" },
-    { imageSrc: "", name: "CSS" },
-    { imageSrc: "", name: "JavaScript" },
-    { imageSrc: "", name: "TypeScript" },
-    { imageSrc: "", name: "React.js" },
-    { imageSrc: "", name: "TypeScript" },
-    { imageSrc: "", name: "GIT" },
-    { imageSrc: "", name: "Bundlers" },
-    { imageSrc: "", name: "npm/yarn" },
-    { imageSrc: "", name: "RWD" },
-    { imageSrc: "", name: "API" },
-    { imageSrc: "", name: "SCRUM" },
+    { imageSrc: "styles/images/html5.svg", name: "HTML" },
+    { imageSrc: "styles/images/css3.svg", name: "CSS" },
+    { imageSrc: "styles/images/javascript.svg", name: "JavaScript" },
+    { imageSrc: "styles/images/typescript.svg", name: "TypeScript" },
+    { imageSrc: "styles/images/reactjs.svg", name: "React.js" },
+    { imageSrc: "styles/images/redux.svg", name: "State" },
+    { imageSrc: "styles/images/git.svg", name: "GIT" },
+    { imageSrc: "styles/images/webpack.svg", name: "Bundlers" },
+    { imageSrc: "styles/images/package.svg", name: "npm/yarn" },
+    { imageSrc: "styles/images/rwd.svg", name: "RWD" },
+    { imageSrc: "styles/images/api.svg", name: "API" },
+    { imageSrc: "styles/images/scrum.svg", name: "SCRUM" },
   ];
 
   const additionalSkillsList = [
@@ -37,10 +37,15 @@
             .map(
               (core) => /* html */ `
                 <div class="skills__core__item">
-                  <div class="skills__core__item__image__wrapper">
-                    <!-- <img class="skills__core__item__image" src=${core.imageSrc} alt=${core.name} /> -->
+                  <div class="skills__core__item__image__wrapper">${
+                    core.imageSrc
+                      ? ` <img class="skills__core__item__image" src=${core.imageSrc} alt=${core.name} />`
+                      : ""
+                  }
                   </div>
-                  <div class="skills__core__item__content">${core.name}</div>
+                  <div class="skills__core__item__content">${
+                    core.name ? core.name : ""
+                  }</div>
                 </div>
               `
             )

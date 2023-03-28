@@ -1,25 +1,24 @@
 body {
-  width: 80%;
   font-family: var(--font-family);
   font-weight: var(--weight-regular);
   font-size: 12px;
-  margin: auto;
 }
 
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
 .container__left {
   width: 70%;
-  margin-right: 5px;
+  box-sizing: inherit;
+  padding-right: 10px;
 }
 
 .container__right {
   width: 30%;
-  margin-left: 5px;
 }
 
 .strong {
@@ -28,11 +27,4 @@ body {
 
 .main-content {
   margin-bottom: 15px;
-}
-
-@media print {
-  body {
-    width: 90%;
-    margin: auto;
-  }
 }
