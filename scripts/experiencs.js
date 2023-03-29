@@ -9,8 +9,8 @@
       location: "Szczecin",
       project:
         "Runtime and User Interface for electric cars navigation system.",
-      role: "&#x2022; Primarily <span class='strong'>Front-end developer</span>",
-      stackPrimary: "&#x2022; Primarily: TypeScript, React, RxJs, Node.js",
+      role: "&#x2022; <span class='strong'>Front-end developer</span>",
+      stackPrimary: "&#x2022; TypeScript, React, RxJs, Node.js",
       stackSecondary: null,
       stackAdditional: null,
       rowDisplay: true,

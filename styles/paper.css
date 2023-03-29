@@ -26,11 +26,18 @@ body.legal.landscape  .sheet { width: 357mm; height: 215mm }
 .sheet.padding-15mm { padding: 15mm }
 .sheet.padding-20mm { padding: 20mm }
 .sheet.padding-25mm { padding: 25mm }
+
 .sheet.padding-left-5mm { padding-left: 5mm }
 .sheet.padding-left-10mm { padding-left: 10mm }
 .sheet.padding-left-15mm { padding-left: 15mm }
 .sheet.padding-left-20mm { padding-left: 20mm }
 .sheet.padding-left-25mm { padding-left: 25mm }
+
+.sheet.padding-bottom-footer-5mm { padding-bottom: calc(5mm + 30px)}
+.sheet.padding-bottom-footer-10mm { padding-bottom: calc(10mm + 30px)}
+.sheet.padding-bottom-footer-15mm { padding-bottom: calc(15mm + 30px)}
+.sheet.padding-bottom-footer-20mm { padding-bottom: calc(20mm + 30px)}
+.sheet.padding-bottom-footer-25mm { padding-bottom: calc(25mm + 30px)}
 
 /** For screen preview **/
 @media screen {

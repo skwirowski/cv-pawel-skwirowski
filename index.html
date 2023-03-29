@@ -13,33 +13,38 @@
 </head>
 
 <body class="A4">
-  <section class="sheet padding-5mm padding-left-10mm">
-  <header class="banner">
-
-      <div class="banner__wrapper__left">
-        <h1 class="banner__name">Paweł Skwirowski</h1>
-        <h2 class="banner__position">Software developer</h2>
+  <section class="sheet padding-5mm padding-left-10mm padding-bottom-footer-5mm">
+    <header class="banner">
+        <div class="banner__wrapper__left">
+          <h1 class="banner__name">Paweł Skwirowski</h1>
+          <h2 class="banner__position">Software developer</h2>
+        </div>
+        <div class="banner__wrapper__right">
+          <div class="banner__picture"></div>
+        </div>
+    </header>
+    <div class="container">
+      <div class="container__left">
+        <main id="experience" class="main-content"></main>
       </div>
-      <div class="banner__wrapper__right">
-        <div class="banner__picture"></div>
+      <div class="container__right">
+        <main id="personal-info" class="main-content"></main>
+        <main id="skills" class="main-content"></main>
       </div>
-
-  </header>
-  <div class="container">
-    <div class="container__left">
-      <main id="experience" class="main-content"></main>
     </div>
-    <div class="container__right">
-      <main id="personal-info" class="main-content"></main>
-      <main id="skills" class="main-content"></main>
+    <footer class="footer">
+      <p class="footer__clause">
+        I hereby give consent for my personal data included in my application to be processed for the purposes of the current
+        and future recruitment processes.  
+      </p>
+      <p class="footer__name">Paweł Skwirowski, <span id="footer" class="footer__date"></span></p>
+    </footer>
+  </section>
 
-
-    </div>
-  </div>
-</section>
   <script src="scripts/experiencs.js"></script>
   <script src="scripts/personalInfo.js"></script>
   <script src="scripts/skills.js"></script>
+  <script src="scripts/footer.js"></script>
 </body>
 
 </html>
