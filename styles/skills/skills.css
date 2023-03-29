@@ -44,6 +44,7 @@
 .skills__additional__item__image__wrapper {
   height: 30px;
   width: 30px;
+  flex-shrink: 0;
   background-color: #fff;
   overflow: hidden;
   margin-right: 10px;

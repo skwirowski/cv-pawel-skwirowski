@@ -1,0 +1,26 @@
+.languages {}
+
+.languages__item {
+	display: flex;
+	align-items: center;
+}
+
+.languages__item__image__wrapper {
+	height: 30px;
+	width: 30px;
+	flex-shrink: 0;
+	background-color: #979191;
+	overflow: hidden;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.languages__item__image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.languages__item__content {
+	font-size: 14px;
+}

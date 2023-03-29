@@ -1,24 +1,24 @@
 .footer {
-    position: absolute;
-    bottom: 5mm;
-    left: 0;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	position: absolute;
+	bottom: 5mm;
+	left: 0;
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .footer__clause,
 .footer__name {
-    font-weight: var(--weight-light);
-    text-align: center;
-    margin: 0;
+	font-weight: var(--weight-light);
+	text-align: center;
+	margin: 0;
 }
 
 .footer__clause {
-    width: 100%;
-    font-size: 10px;
+	width: 100%;
+	font-size: 10px;
 }
 
 .footer__name {}
