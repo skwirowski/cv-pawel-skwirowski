@@ -46,6 +46,15 @@
 
 .experience__postion-location__location {}
 
+.experience__role-tech-stack__wrapper.row-display {
+  display: flex;
+}
+
+.experience__role-tech-stack__wrapper.row-display .experience__role,
+.experience__role-tech-stack__wrapper.row-display .experience__tech-stack{
+  width: 50%;
+}
+
 .experience__project, .experience__role, .experience__tech-stack {
   font-size: 12px;
   margin-bottom: 5px;

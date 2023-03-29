@@ -1,7 +1,7 @@
 (function () {
   const experience = [
     {
-      timeStart: "12.2022",
+      timeStart: "2022.12",
       timeEnd: "present",
       companyImage: "./styles/images/company_globallogic.jpg",
       companyName: "GlobalLogic",
@@ -13,10 +13,11 @@
       stackPrimary: "&#x2022; Primarily: TypeScript, React, RxJs, Node.js",
       stackSecondary: null,
       stackAdditional: null,
+      rowDisplay: true,
     },
     {
-      timeStart: "01.2022",
-      timeEnd: "12.2022",
+      timeStart: "2022.01",
+      timeEnd: "2022.12",
       companyImage: "./styles/images/company_intive.png",
       companyName: "intive",
       position: "Software Engineering Specialist",
@@ -28,10 +29,11 @@
         "&#x2022; Primarily: React, TypeScript, JavaScript, Emotion CSS, Storybook",
       stackSecondary: "&#x2022; Secondarily: Node, Azure Cloud, Cosmos DB",
       stackAdditional: null,
+      rowDisplay: false,
     },
     {
-      timeStart: "01.2020",
-      timeEnd: "01.2022",
+      timeStart: "2020.01",
+      timeEnd: "2022.01",
       companyImage: "./styles/images/company_tietoevry.jpg",
       companyName: "TietoEVRY",
       position: "Junior Software Developer",
@@ -44,6 +46,22 @@
       stackSecondary:
         "&#x2022; Secondarily: C# and .NET Core environment, Azure Cloud, SQL database",
       stackAdditional: "&#x2022; Additionally: Selenium web driver",
+      rowDisplay: false,
+    },
+    {
+      timeStart: "2019.01",
+      timeEnd: "2019.10",
+      companyImage: "./styles/images/company_tipanddonation.png",
+      companyName: "TAD Sp. z o. o.",
+      position: "Junior Front-end Developer",
+      location: "Szczecin",
+      project:
+        "Web application for streamers and internet creators. Providing integration with YouTube and Twitch, streaming utilities and tools to monetize internet activity.",
+      role: "&#x2022; <span class='strong'>Front-end developer</span>",
+      stackPrimary: "&#x2022; HTML, CSS, JavaScript, React, Redux",
+      stackSecondary: "",
+      stackAdditional: "",
+      rowDisplay: true,
     },
   ];
 
@@ -82,25 +100,29 @@
           <div class="experience__project__description">Project description:</div>
           <div class="experience__project__content">${experience.project}</div>
         </div>
-        <div class="experience__role">
-          <div class="experience__role__description">Role:</div>
-          <div class="experience__role__content">${experience.role}</div>
-        </div>
-        <div class="experience__tech-stack">
-          <div class="experience__tech-stack__description">Tech stack:</div>
-          <div class="experience__tech-stack__content">${
-            experience.stackPrimary
-          }</div>
-          ${
-            experience.stackSecondary
-              ? `<div class="experience__tech-stack__content">${experience.stackSecondary}</div>`
-              : ""
-          }
-          ${
-            experience.stackAdditional
-              ? `<div class="experience__tech-stack__content">${experience.stackAdditional}</div>`
-              : ""
-          }
+        <div class="experience__role-tech-stack__wrapper${
+          experience.rowDisplay ? " row-display" : ""
+        }">
+          <div class="experience__role">
+            <div class="experience__role__description">Role:</div>
+            <div class="experience__role__content">${experience.role}</div>
+          </div>
+          <div class="experience__tech-stack">
+            <div class="experience__tech-stack__description">Tech stack:</div>
+            <div class="experience__tech-stack__content">${
+              experience.stackPrimary
+            }</div>
+            ${
+              experience.stackSecondary
+                ? `<div class="experience__tech-stack__content">${experience.stackSecondary}</div>`
+                : ""
+            }
+            ${
+              experience.stackAdditional
+                ? `<div class="experience__tech-stack__content">${experience.stackAdditional}</div>`
+                : ""
+            }
+          </div>
         </div>
       </div>
     `
