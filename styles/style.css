@@ -1,5 +1,6 @@
 @import "./variables.css";
 @import "./common.css";
+@import "./banner/banner.css";
 @import "./header/header.css";
 @import "./experience/experience.css";
 @import "./personal-info/personal-info.css";
