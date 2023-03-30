@@ -1,5 +1,5 @@
 (function () {
-  const experience = [
+  const experiencePage1 = [
     {
       timeStart: "2022.12",
       timeEnd: "present",
@@ -65,13 +65,63 @@
     },
   ];
 
-  const experienceBlocks = (workHistory) => /* html */ `
-  <header class="header">
-    <div class="header__image__wrapper">
-      <!-- <img class="header__image" src="./styles/images/" alt="header"/> -->
-    </div>
-    <h2 class="header__content">Experience</h2>
-  </header>
+  const experiencePage2 = [
+    {
+      timeStart: "2014.02",
+      timeEnd: "2018.12",
+      companyImage: "./styles/images/company_sbt.jpeg",
+      companyName: "Schreuders Bouwtechniek (SBT)",
+      position: "Construction Engineer & Drafting technician",
+      location: "Szczecin",
+      project: null,
+      role: null,
+      stackPrimary: null,
+      stackSecondary: null,
+      stackAdditional: null,
+      rowDisplay: false,
+    },
+    {
+      timeStart: "2013.05",
+      timeEnd: "2014.02",
+      companyImage: "./styles/images/company_kjr.png",
+      companyName: "Construction Office KJR Projekt",
+      position: "Assistant Construction Engineer & Draftsman",
+      location: "Szczecin",
+      project: null,
+      role: null,
+      stackPrimary: null,
+      stackSecondary: null,
+      stackAdditional: null,
+      rowDisplay: false,
+    },
+    {
+      timeStart: "2009.10",
+      timeEnd: "2013.05",
+      companyImage: "./styles/images/company_nologo.png",
+      companyName: "Architectural Office Józefa Benłużańska",
+      position: "Draftsman & Assistant Construction Engineer",
+      location: "Goleniów",
+      project: null,
+      role: null,
+      stackPrimary: null,
+      stackSecondary: null,
+      stackAdditional: null,
+      rowDisplay: false,
+    },
+  ];
+
+  const experienceBlocks = (workHistory, pageNumber) => /* html */ `
+  ${
+    pageNumber === 1
+      ? `<header class="header">
+          <div div class="header__image__wrapper">
+            <!-- <img class="header__image" src="./styles/images/" alt="header"/> -->
+          </div>
+          <h2 class="header__content">Experience</h2>
+        </header>`
+      : ""
+  }
+  
   ${workHistory
     .map(
       (experience) => /* html */ `
@@ -96,33 +146,45 @@
             experience.location
           }</div>
         </div>
-        <div class="experience__project">
-          <div class="experience__project__description">Project description:</div>
-          <div class="experience__project__content">${experience.project}</div>
-        </div>
+        ${
+          experience.project
+            ? `<div class="experience__project">
+                <div class="experience__project__description">Project description:</div>
+                <div class="experience__project__content">${experience.project}</div>
+              </div>`
+            : ""
+        }
         <div class="experience__role-tech-stack__wrapper${
           experience.rowDisplay ? " row-display" : ""
         }">
-          <div class="experience__role">
-            <div class="experience__role__description">Role:</div>
-            <div class="experience__role__content">${experience.role}</div>
-          </div>
-          <div class="experience__tech-stack">
-            <div class="experience__tech-stack__description">Tech stack:</div>
-            <div class="experience__tech-stack__content">${
-              experience.stackPrimary
-            }</div>
-            ${
-              experience.stackSecondary
-                ? `<div class="experience__tech-stack__content">${experience.stackSecondary}</div>`
-                : ""
-            }
-            ${
-              experience.stackAdditional
-                ? `<div class="experience__tech-stack__content">${experience.stackAdditional}</div>`
-                : ""
-            }
-          </div>
+          ${
+            experience.role
+              ? `<div class="experience__role">
+                  <div class="experience__role__description">Role:</div>
+                  <div class="experience__role__content">${experience.role}</div>
+                </div>`
+              : ""
+          }
+          ${
+            experience.stackPrimary
+              ? `<div class="experience__tech-stack">
+                  <div class="experience__tech-stack__description">Tech stack:</div>
+                  <div class="experience__tech-stack__content">${
+                    experience.stackPrimary
+                  }</div>
+                  ${
+                    experience.stackSecondary
+                      ? `<div class="experience__tech-stack__content">${experience.stackSecondary}</div>`
+                      : ""
+                  }
+                  ${
+                    experience.stackAdditional
+                      ? `<div class="experience__tech-stack__content">${experience.stackAdditional}</div>`
+                      : ""
+                  }
+                </div>`
+              : ""
+          }
         </div>
       </div>
     `
@@ -130,6 +192,9 @@
     .join("")}
 `;
 
-  const htmlElement = document.getElementById("experience");
-  htmlElement.innerHTML = experienceBlocks(experience);
+  const htmlElement1 = document.getElementById("experience-page-1");
+  htmlElement1.innerHTML = experienceBlocks(experiencePage1, 1);
+
+  const htmlElement2 = document.getElementById("experience-page-2");
+  htmlElement2.innerHTML = experienceBlocks(experiencePage2, 2);
 })();
