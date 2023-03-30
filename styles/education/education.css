@@ -1,0 +1,62 @@
+.education {
+	margin-bottom: 10px;
+}
+
+.education__time {
+	font-size: 14px;
+	line-height: 1.5;
+	background-color: var(--color-2);
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
+.education__institution {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.education__institution__image__wrapper {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: var(--color-1);
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.education__institution__image {
+	height: 100%;
+	width: 100%;
+}
+
+.education__institution__name {
+	font-size: 18px;
+	font-weight: var(--weight-bold);
+}
+
+.education__field-location {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.education__field-location__field {}
+
+.education__field-location__location {}
+
+.education__info {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.education__info__description {
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+.education__info__content {
+	font-weight: var(--weight-light);
+	text-align: justify;
+}
