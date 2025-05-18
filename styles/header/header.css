@@ -7,17 +7,22 @@
 }
 
 .header__image__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: var(--color-1);
+  background-color: var(--primary);
   margin-right: 10px;
 }
 
-.header__image {}
+.header__image {
+  width: 30px;
+}
 
 .header__content {
   font-family: var(--font-family-header);
-  font-size: 24px;
+  font-size: 28px;
   margin: 0;
 }

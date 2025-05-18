@@ -7,13 +7,15 @@
       companyName: "GlobalLogic",
       position: "Software Engineer",
       location: "Szczecin",
-      project:
-        "Runtime and User Interface for electric cars navigation system.",
-      role: "&#x2022; <span class='strong'>Front-end developer</span>",
-      stackPrimary: "&#x2022; TypeScript, React, RxJs, Node.js",
+      project: `Currently I am working on sales tool designed to improve adoption of cloud-based VMware Engine solution. Tool gives insights and resources to sales team,
+        allowing the transition of customers from cloud platforms and on-premise solutions.<br />
+        In my previous projects I have worked on Automotive runtime application for cars and before that on a Runtime and User Interface for electric cars navigation system.`,
+      role: "&#x2022; Primarily <span class='strong'>Front-end developer</span> &#x2022; Secondarily Back-end developer, &#x2022; Business requirements analysis",
+      stackPrimary:
+        "&#x2022; JavaScript, TypeScript, Node.js, Linux, React, RxJs, Prompt engineering, AI-powered tools",
       stackSecondary: null,
       stackAdditional: null,
-      rowDisplay: true,
+      rowDisplay: false,
     },
     {
       timeStart: "2022.01",
@@ -48,6 +50,9 @@
       stackAdditional: "&#x2022; Additionally: Selenium web driver",
       rowDisplay: false,
     },
+  ];
+
+  const experiencePage2 = [
     {
       timeStart: "2019.01",
       timeEnd: "2019.10",
@@ -63,9 +68,6 @@
       stackAdditional: "",
       rowDisplay: true,
     },
-  ];
-
-  const experiencePage2 = [
     {
       timeStart: "2014.02",
       timeEnd: "2018.12",
@@ -115,7 +117,7 @@
     pageNumber === 1
       ? `<header class="header">
           <div div class="header__image__wrapper">
-            <!-- <img class="header__image" src="./styles/images/" alt="header"/> -->
+            <img class="header__image" src="./styles/images/header_experience.svg" alt="header"/>
           </div>
           <h2 class="header__content">Experience</h2>
         </header>`

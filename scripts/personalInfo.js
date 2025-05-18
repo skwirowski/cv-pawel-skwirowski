@@ -35,7 +35,7 @@
   const personalInfoBlocks = (personalData) => /* html */ `
   <header class="header">
     <div class="header__image__wrapper">
-      <!-- <img class="header__image" src="./styles/images/" alt="header"/> -->
+      <img class="header__image" src="./styles/images/header_personal.svg" alt="header"/>
     </div>
     <h2 class="header__content">Personal info</h2>
   </header>

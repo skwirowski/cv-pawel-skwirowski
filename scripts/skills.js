@@ -26,7 +26,7 @@
   const skillsBlocks = (coreSkills, additionalSkills) => /* html */ `
     <header class="header">
         <div class="header__image__wrapper">
-          <!-- <img class="header__image" src="./styles/images/" alt="header"/> -->
+          <img class="header__image" src="./styles/images/header_skills.svg" alt="header"/>
         </div>
         <h2 class="header__content">Skills</h2>
       </header>

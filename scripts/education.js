@@ -33,7 +33,7 @@
   const educationBlocks = (educationHistory) => /* html */ `
     <header class="header">
       <div class="header__image__wrapper">
-        <!-- <img class="header__image" src="./styles/images/" alt="header"/> -->
+        <img class="header__image" src="./styles/images/header_education.svg" alt="header"/>
       </div>
       <h2 class="header__content">Education</h2>
     </header>

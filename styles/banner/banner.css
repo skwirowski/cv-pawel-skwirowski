@@ -1,7 +1,7 @@
 .banner {
 	display: flex;
 	justify-content: space-between;
-	background-color: #bd86f1;
+	background-color: var(--primary);
 	margin: -5mm -5mm 15px -10mm;
 }
 
